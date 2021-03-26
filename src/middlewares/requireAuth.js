@@ -15,6 +15,7 @@ module.exports=async(req,res,next)=>{
         req.token=token
         next()
     } catch (e) {
-        res.status(401).send('Please authenicate.')
+
+        res.status(401).send(e.message+'Please authenicate.')
     }
 }
