@@ -16,6 +16,6 @@ module.exports=async(req,res,next)=>{
         next()
     } catch (e) {
 
-        res.status(401).send(e.message+'Please authenicate.')
+        res.status(401).send('Please authenicate.')
     }
 }
